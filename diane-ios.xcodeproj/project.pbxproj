@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D0BA682A68617A00274FDA /* diane_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA672A68617A00274FDA /* diane_iosApp.swift */; };
+		B4D0BA6A2A68617A00274FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA692A68617A00274FDA /* ContentView.swift */; };
+		B4D0BA6C2A68617C00274FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6B2A68617C00274FDA /* Assets.xcassets */; };
+		B4D0BA702A68617C00274FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */; };
+		B4D0BA7A2A68617C00274FDA /* diane_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA792A68617C00274FDA /* diane_iosTests.swift */; };
+		B4D0BA842A68617C00274FDA /* diane_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA832A68617C00274FDA /* diane_iosUITests.swift */; };
+		B4D0BA862A68617C00274FDA /* diane_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA852A68617C00274FDA /* diane_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4D0BA762A68617C00274FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D0BA5C2A68617A00274FDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D0BA632A68617A00274FDA;
+			remoteInfo = "diane-ios";
+		};
+		B4D0BA802A68617C00274FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D0BA5C2A68617A00274FDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D0BA632A68617A00274FDA;
+			remoteInfo = "diane-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4D0BA642A68617A00274FDA /* diane-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diane-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D0BA672A68617A00274FDA /* diane_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosApp.swift; sourceTree = "<group>"; };
+		B4D0BA692A68617A00274FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4D0BA6B2A68617C00274FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4D0BA6D2A68617C00274FDA /* diane_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = diane_ios.entitlements; sourceTree = "<group>"; };
+		B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4D0BA752A68617C00274FDA /* diane-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diane-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D0BA792A68617C00274FDA /* diane_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosTests.swift; sourceTree = "<group>"; };
+		B4D0BA7F2A68617C00274FDA /* diane-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diane-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D0BA832A68617C00274FDA /* diane_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosUITests.swift; sourceTree = "<group>"; };
+		B4D0BA852A68617C00274FDA /* diane_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D0BA612A68617A00274FDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA722A68617C00274FDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA7C2A68617C00274FDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4D0BA5B2A68617A00274FDA = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA662A68617A00274FDA /* diane-ios */,
+				B4D0BA782A68617C00274FDA /* diane-iosTests */,
+				B4D0BA822A68617C00274FDA /* diane-iosUITests */,
+				B4D0BA652A68617A00274FDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D0BA652A68617A00274FDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA642A68617A00274FDA /* diane-ios.app */,
+				B4D0BA752A68617C00274FDA /* diane-iosTests.xctest */,
+				B4D0BA7F2A68617C00274FDA /* diane-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D0BA662A68617A00274FDA /* diane-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA672A68617A00274FDA /* diane_iosApp.swift */,
+				B4D0BA692A68617A00274FDA /* ContentView.swift */,
+				B4D0BA6B2A68617C00274FDA /* Assets.xcassets */,
+				B4D0BA6D2A68617C00274FDA /* diane_ios.entitlements */,
+				B4D0BA6E2A68617C00274FDA /* Preview Content */,
+			);
+			path = "diane-ios";
+			sourceTree = "<group>";
+		};
+		B4D0BA6E2A68617C00274FDA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4D0BA782A68617C00274FDA /* diane-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA792A68617C00274FDA /* diane_iosTests.swift */,
+			);
+			path = "diane-iosTests";
+			sourceTree = "<group>";
+		};
+		B4D0BA822A68617C00274FDA /* diane-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D0BA832A68617C00274FDA /* diane_iosUITests.swift */,
+				B4D0BA852A68617C00274FDA /* diane_iosUITestsLaunchTests.swift */,
+			);
+			path = "diane-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4D0BA632A68617A00274FDA /* diane-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D0BA892A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-ios" */;
+			buildPhases = (
+				B4D0BA602A68617A00274FDA /* Sources */,
+				B4D0BA612A68617A00274FDA /* Frameworks */,
+				B4D0BA622A68617A00274FDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diane-ios";
+			productName = "diane-ios";
+			productReference = B4D0BA642A68617A00274FDA /* diane-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4D0BA742A68617C00274FDA /* diane-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D0BA8C2A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-iosTests" */;
+			buildPhases = (
+				B4D0BA712A68617C00274FDA /* Sources */,
+				B4D0BA722A68617C00274FDA /* Frameworks */,
+				B4D0BA732A68617C00274FDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D0BA772A68617C00274FDA /* PBXTargetDependency */,
+			);
+			name = "diane-iosTests";
+			productName = "diane-iosTests";
+			productReference = B4D0BA752A68617C00274FDA /* diane-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4D0BA7E2A68617C00274FDA /* diane-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D0BA8F2A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-iosUITests" */;
+			buildPhases = (
+				B4D0BA7B2A68617C00274FDA /* Sources */,
+				B4D0BA7C2A68617C00274FDA /* Frameworks */,
+				B4D0BA7D2A68617C00274FDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D0BA812A68617C00274FDA /* PBXTargetDependency */,
+			);
+			name = "diane-iosUITests";
+			productName = "diane-iosUITests";
+			productReference = B4D0BA7F2A68617C00274FDA /* diane-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D0BA5C2A68617A00274FDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B4D0BA632A68617A00274FDA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B4D0BA742A68617C00274FDA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B4D0BA632A68617A00274FDA;
+					};
+					B4D0BA7E2A68617C00274FDA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B4D0BA632A68617A00274FDA;
+					};
+				};
+			};
+			buildConfigurationList = B4D0BA5F2A68617A00274FDA /* Build configuration list for PBXProject "diane-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4D0BA5B2A68617A00274FDA;
+			productRefGroup = B4D0BA652A68617A00274FDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D0BA632A68617A00274FDA /* diane-ios */,
+				B4D0BA742A68617C00274FDA /* diane-iosTests */,
+				B4D0BA7E2A68617C00274FDA /* diane-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D0BA622A68617A00274FDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D0BA702A68617C00274FDA /* Preview Assets.xcassets in Resources */,
+				B4D0BA6C2A68617C00274FDA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA732A68617C00274FDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA7D2A68617C00274FDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4D0BA602A68617A00274FDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D0BA6A2A68617A00274FDA /* ContentView.swift in Sources */,
+				B4D0BA682A68617A00274FDA /* diane_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA712A68617C00274FDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D0BA7A2A68617C00274FDA /* diane_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D0BA7B2A68617C00274FDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D0BA862A68617C00274FDA /* diane_iosUITestsLaunchTests.swift in Sources */,
+				B4D0BA842A68617C00274FDA /* diane_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4D0BA772A68617C00274FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D0BA632A68617A00274FDA /* diane-ios */;
+			targetProxy = B4D0BA762A68617C00274FDA /* PBXContainerItemProxy */;
+		};
+		B4D0BA812A68617C00274FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D0BA632A68617A00274FDA /* diane-ios */;
+			targetProxy = B4D0BA802A68617C00274FDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4D0BA872A68617C00274FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4D0BA882A68617C00274FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B4D0BA8A2A68617C00274FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diane-ios/diane_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"diane-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4D0BA8B2A68617C00274FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diane-ios/diane_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"diane-ios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4D0BA8D2A68617C00274FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diane-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diane-ios";
+			};
+			name = Debug;
+		};
+		B4D0BA8E2A68617C00274FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diane-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diane-ios";
+			};
+			name = Release;
+		};
+		B4D0BA902A68617C00274FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diane-ios";
+			};
+			name = Debug;
+		};
+		B4D0BA912A68617C00274FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test-org.diane-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diane-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D0BA5F2A68617A00274FDA /* Build configuration list for PBXProject "diane-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D0BA872A68617C00274FDA /* Debug */,
+				B4D0BA882A68617C00274FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D0BA892A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D0BA8A2A68617C00274FDA /* Debug */,
+				B4D0BA8B2A68617C00274FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D0BA8C2A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D0BA8D2A68617C00274FDA /* Debug */,
+				B4D0BA8E2A68617C00274FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D0BA8F2A68617C00274FDA /* Build configuration list for PBXNativeTarget "diane-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D0BA902A68617C00274FDA /* Debug */,
+				B4D0BA912A68617C00274FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D0BA5C2A68617A00274FDA /* Project object */;
+}
