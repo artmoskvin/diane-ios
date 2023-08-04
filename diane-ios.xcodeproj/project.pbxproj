@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B4D0BA682A68617A00274FDA /* diane_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA672A68617A00274FDA /* diane_iosApp.swift */; };
-		B4D0BA6A2A68617A00274FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA692A68617A00274FDA /* ContentView.swift */; };
 		B4D0BA6C2A68617C00274FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6B2A68617C00274FDA /* Assets.xcassets */; };
 		B4D0BA702A68617C00274FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */; };
 		B4D0BA7A2A68617C00274FDA /* diane_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA792A68617C00274FDA /* diane_iosTests.swift */; };
 		B4D0BA842A68617C00274FDA /* diane_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA832A68617C00274FDA /* diane_iosUITests.swift */; };
 		B4D0BA862A68617C00274FDA /* diane_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA852A68617C00274FDA /* diane_iosUITestsLaunchTests.swift */; };
+		B4D0BA9F2A68722400274FDA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA9E2A68722400274FDA /* Note.swift */; };
+		B4D0BAA12A6874BC00274FDA /* NotesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAA02A6874BC00274FDA /* NotesData.swift */; };
+		B4D0BAA32A687A3C00274FDA /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAA22A687A3C00274FDA /* NoteList.swift */; };
+		B4D0BAA52A687E3800274FDA /* NoteViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAA42A687E3800274FDA /* NoteViewer.swift */; };
+		B4D0BAA72A68816800274FDA /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAA62A68816800274FDA /* NoteRow.swift */; };
+		B4D0BAA92A6882C100274FDA /* CustomLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAA82A6882C100274FDA /* CustomLabelStyle.swift */; };
+		B4D0BAAB2A68838A00274FDA /* NoteSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAAA2A68838A00274FDA /* NoteSymbols.swift */; };
+		B4D0BAAD2A68840200274FDA /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BAAC2A68840200274FDA /* ColorOption.swift */; };
+		B4F1CA712A6ACE3B00E4C95F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA702A6ACE3B00E4C95F /* ChatModel.swift */; };
+		B4F1CA732A6ACF7400E4C95F /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA722A6ACF7400E4C95F /* ContentMessageView.swift */; };
+		B4F1CA752A6AD49B00E4C95F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA742A6AD49B00E4C95F /* MessageView.swift */; };
+		B4F1CA772A6AD7FD00E4C95F /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA762A6AD7FD00E4C95F /* ChatHelper.swift */; };
+		B4F1CA7B2A6ADA9A00E4C95F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA7A2A6ADA9A00E4C95F /* ChatView.swift */; };
+		B4F1CA812A6B198800E4C95F /* NewChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F1CA802A6B198800E4C95F /* NewChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,6 @@
 /* Begin PBXFileReference section */
 		B4D0BA642A68617A00274FDA /* diane-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diane-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D0BA672A68617A00274FDA /* diane_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosApp.swift; sourceTree = "<group>"; };
-		B4D0BA692A68617A00274FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4D0BA6B2A68617C00274FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4D0BA6D2A68617C00274FDA /* diane_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = diane_ios.entitlements; sourceTree = "<group>"; };
 		B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +57,20 @@
 		B4D0BA7F2A68617C00274FDA /* diane-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diane-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D0BA832A68617C00274FDA /* diane_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosUITests.swift; sourceTree = "<group>"; };
 		B4D0BA852A68617C00274FDA /* diane_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4D0BA9E2A68722400274FDA /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B4D0BAA02A6874BC00274FDA /* NotesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesData.swift; sourceTree = "<group>"; };
+		B4D0BAA22A687A3C00274FDA /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
+		B4D0BAA42A687E3800274FDA /* NoteViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewer.swift; sourceTree = "<group>"; };
+		B4D0BAA62A68816800274FDA /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		B4D0BAA82A6882C100274FDA /* CustomLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelStyle.swift; sourceTree = "<group>"; };
+		B4D0BAAA2A68838A00274FDA /* NoteSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSymbols.swift; sourceTree = "<group>"; };
+		B4D0BAAC2A68840200274FDA /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
+		B4F1CA702A6ACE3B00E4C95F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		B4F1CA722A6ACF7400E4C95F /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		B4F1CA742A6AD49B00E4C95F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		B4F1CA762A6AD7FD00E4C95F /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		B4F1CA7A2A6ADA9A00E4C95F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B4F1CA802A6B198800E4C95F /* NewChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +121,24 @@
 		B4D0BA662A68617A00274FDA /* diane-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B4F1CA742A6AD49B00E4C95F /* MessageView.swift */,
+				B4F1CA762A6AD7FD00E4C95F /* ChatHelper.swift */,
+				B4F1CA7A2A6ADA9A00E4C95F /* ChatView.swift */,
 				B4D0BA672A68617A00274FDA /* diane_iosApp.swift */,
-				B4D0BA692A68617A00274FDA /* ContentView.swift */,
+				B4D0BA9E2A68722400274FDA /* Note.swift */,
+				B4F1CA702A6ACE3B00E4C95F /* ChatModel.swift */,
+				B4F1CA722A6ACF7400E4C95F /* ContentMessageView.swift */,
+				B4D0BAAA2A68838A00274FDA /* NoteSymbols.swift */,
+				B4D0BAA02A6874BC00274FDA /* NotesData.swift */,
+				B4D0BAA22A687A3C00274FDA /* NoteList.swift */,
+				B4D0BAA62A68816800274FDA /* NoteRow.swift */,
+				B4F1CA802A6B198800E4C95F /* NewChatRow.swift */,
+				B4D0BAA82A6882C100274FDA /* CustomLabelStyle.swift */,
+				B4D0BAA42A687E3800274FDA /* NoteViewer.swift */,
 				B4D0BA6B2A68617C00274FDA /* Assets.xcassets */,
 				B4D0BA6D2A68617C00274FDA /* diane_ios.entitlements */,
 				B4D0BA6E2A68617C00274FDA /* Preview Content */,
+				B4D0BAAC2A68840200274FDA /* ColorOption.swift */,
 			);
 			path = "diane-ios";
 			sourceTree = "<group>";
@@ -259,8 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4D0BA6A2A68617A00274FDA /* ContentView.swift in Sources */,
+				B4D0BAA72A68816800274FDA /* NoteRow.swift in Sources */,
+				B4D0BAA92A6882C100274FDA /* CustomLabelStyle.swift in Sources */,
+				B4F1CA7B2A6ADA9A00E4C95F /* ChatView.swift in Sources */,
+				B4F1CA712A6ACE3B00E4C95F /* ChatModel.swift in Sources */,
+				B4D0BAAD2A68840200274FDA /* ColorOption.swift in Sources */,
+				B4F1CA732A6ACF7400E4C95F /* ContentMessageView.swift in Sources */,
+				B4D0BAA52A687E3800274FDA /* NoteViewer.swift in Sources */,
+				B4F1CA812A6B198800E4C95F /* NewChatRow.swift in Sources */,
+				B4F1CA752A6AD49B00E4C95F /* MessageView.swift in Sources */,
+				B4D0BA9F2A68722400274FDA /* Note.swift in Sources */,
+				B4D0BAA32A687A3C00274FDA /* NoteList.swift in Sources */,
+				B4D0BAA12A6874BC00274FDA /* NotesData.swift in Sources */,
 				B4D0BA682A68617A00274FDA /* diane_iosApp.swift in Sources */,
+				B4D0BAAB2A68838A00274FDA /* NoteSymbols.swift in Sources */,
+				B4F1CA772A6AD7FD00E4C95F /* ChatHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
