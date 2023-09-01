@@ -15,7 +15,7 @@ class WhisperState: NSObject, ObservableObject, AVAudioRecorderDelegate {
     private var audioPlayer: AVAudioPlayer?
     
     private var modelUrl: URL? {
-        Bundle.main.url(forResource: "ggml-base.en", withExtension: "bin")
+        Bundle.main.url(forResource: "ggml-small.en", withExtension: "bin")
     }
     
     private var sampleUrl: URL? {
@@ -56,6 +56,7 @@ class WhisperState: NSObject, ObservableObject, AVAudioRecorderDelegate {
     }
     
     private func transcribeAudio(_ url: URL) async -> String? {
+        print(canTranscribe)
         if (!canTranscribe) {
             return nil
         }
@@ -71,14 +72,14 @@ class WhisperState: NSObject, ObservableObject, AVAudioRecorderDelegate {
             await whisperContext.fullTranscribe(samples: data)
             let text = await whisperContext.getTranscription()
             messageLog += "Done: \(text)\n"
+            canTranscribe = true
             return text
         } catch {
             print(error.localizedDescription)
             messageLog += "\(error.localizedDescription)\n"
+            canTranscribe = true
+            return nil
         }
-        
-        canTranscribe = true
-        return nil
     }
     
     private func readAudioSamples(_ url: URL) throws -> [Float] {

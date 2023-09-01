@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CE2C86A2AA25CB800C5B3D1 /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8662AA25CB800C5B3D1 /* whisper.cpp */; };
-		3CE2C86B2AA25CB800C5B3D1 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8682AA25CB800C5B3D1 /* ggml.c */; };
+		3CE2C86A2AA25CB800C5B3D1 /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8662AA25CB800C5B3D1 /* whisper.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
+		3CE2C86B2AA25CB800C5B3D1 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8682AA25CB800C5B3D1 /* ggml.c */; settings = {COMPILER_FLAGS = "-DGGML_USE_ACCELERATE -Wno-shorten-64-to-32"; }; };
 		3CE2C86D2AA25CE200C5B3D1 /* LibWhisper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C86C2AA25CE200C5B3D1 /* LibWhisper.swift */; };
-		3CE2C86F2AA25D3E00C5B3D1 /* ggml-base.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C86E2AA25D3E00C5B3D1 /* ggml-base.en.bin */; };
 		3CE2C8712AA25E5A00C5B3D1 /* sample.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C8702AA25E5A00C5B3D1 /* sample.wav */; };
 		3CE2C8732AA25E8A00C5B3D1 /* WhisperState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8722AA25E8A00C5B3D1 /* WhisperState.swift */; };
 		3CE2C8762AA25EA300C5B3D1 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8742AA25EA300C5B3D1 /* Recorder.swift */; };
 		3CE2C8772AA25EA300C5B3D1 /* RiffWaveUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2C8752AA25EA300C5B3D1 /* RiffWaveUtils.swift */; };
+		3CE2C87B2AA2746F00C5B3D1 /* ggml-small.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C87A2AA2746F00C5B3D1 /* ggml-small.en.bin */; };
+		3CE2C87D2AA2769900C5B3D1 /* ggml-base.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C86E2AA25D3E00C5B3D1 /* ggml-base.en.bin */; };
+		3CE2C87E2AA2769D00C5B3D1 /* ggml-medium.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3CE2C8782AA272B600C5B3D1 /* ggml-medium.en.bin */; };
 		B4D0BA682A68617A00274FDA /* diane_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0BA672A68617A00274FDA /* diane_iosApp.swift */; };
 		B4D0BA6C2A68617C00274FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6B2A68617C00274FDA /* Assets.xcassets */; };
 		B4D0BA702A68617C00274FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D0BA6F2A68617C00274FDA /* Preview Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		3CE2C8722AA25E8A00C5B3D1 /* WhisperState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperState.swift; sourceTree = "<group>"; };
 		3CE2C8742AA25EA300C5B3D1 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		3CE2C8752AA25EA300C5B3D1 /* RiffWaveUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiffWaveUtils.swift; sourceTree = "<group>"; };
+		3CE2C8782AA272B600C5B3D1 /* ggml-medium.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-medium.en.bin"; sourceTree = "<group>"; };
+		3CE2C87A2AA2746F00C5B3D1 /* ggml-small.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-small.en.bin"; sourceTree = "<group>"; };
 		B4D0BA642A68617A00274FDA /* diane-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diane-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D0BA672A68617A00274FDA /* diane_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diane_iosApp.swift; sourceTree = "<group>"; };
 		B4D0BA6B2A68617C00274FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				3CE2C8702AA25E5A00C5B3D1 /* sample.wav */,
+				3CE2C8782AA272B600C5B3D1 /* ggml-medium.en.bin */,
+				3CE2C87A2AA2746F00C5B3D1 /* ggml-small.en.bin */,
 				3CE2C86E2AA25D3E00C5B3D1 /* ggml-base.en.bin */,
 				3CE2C86C2AA25CE200C5B3D1 /* LibWhisper.swift */,
 				3CE2C8642AA25C9100C5B3D1 /* whisper.cpp */,
@@ -313,8 +319,10 @@
 			files = (
 				3CE2C8712AA25E5A00C5B3D1 /* sample.wav in Resources */,
 				B4D0BA702A68617C00274FDA /* Preview Assets.xcassets in Resources */,
+				3CE2C87B2AA2746F00C5B3D1 /* ggml-small.en.bin in Resources */,
+				3CE2C87E2AA2769D00C5B3D1 /* ggml-medium.en.bin in Resources */,
 				B4D0BA6C2A68617C00274FDA /* Assets.xcassets in Resources */,
-				3CE2C86F2AA25D3E00C5B3D1 /* ggml-base.en.bin in Resources */,
+				3CE2C87D2AA2769900C5B3D1 /* ggml-base.en.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"diane-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YHA5UYAKQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needed to transcribe audio";
@@ -563,7 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"diane-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YHA5UYAKQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needed to transcribe audio";

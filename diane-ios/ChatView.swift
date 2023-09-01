@@ -29,6 +29,8 @@ struct ChatView: View {
                     Task {
                         if let result = await whisperState.toggleRecord() {
                             chatHelper.sendMessage(Message(content: result, user: DataSource.secondUser))
+                        } else {
+                            print("dfghjdsfjkgh")
                         }
                     }
                 })
