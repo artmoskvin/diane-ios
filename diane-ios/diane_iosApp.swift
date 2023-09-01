@@ -11,12 +11,14 @@ import SwiftUI
 struct diane_iosApp: App {
     @StateObject private var notesData = NotesData()
     @StateObject private var chatHelper = ChatHelper()
+    @StateObject var whisperState = WhisperState()
     
     var body: some Scene {
             WindowGroup {
                 NoteList()
                     .environmentObject(notesData)
                     .environmentObject(chatHelper)
+                    .environmentObject(whisperState)
             }
         }
 }
