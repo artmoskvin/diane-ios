@@ -30,17 +30,11 @@ struct ChatView: View {
                         if let result = await whisperState.toggleRecord() {
                             chatHelper.sendMessage(Message(content: result, user: DataSource.secondUser))
                         } else {
-                            print("dfghjdsfjkgh")
+                            print("Transcription failed")
                         }
                     }
                 })
             }.frame(minHeight: CGFloat(50)).padding()
-        }
-        .onAppear {
-            Task {
-//                await whisperState.transcribeSample()
-//
-            }
         }
         
     }
