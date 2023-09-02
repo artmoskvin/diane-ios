@@ -10,6 +10,8 @@ import SwiftUI
 struct ChatView: View {
     @State var typingMessage: String = ""
     @EnvironmentObject var chatHelper: ChatHelper
+    @EnvironmentObject var whisperState: WhisperState
+    
     
     var body: some View {
         VStack {
@@ -23,11 +25,24 @@ struct ChatView: View {
                 TextField("Message...", text: $typingMessage)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(minHeight: CGFloat(30))
-                Button(action: sendMessage) {
-                    Text("Send")
-                }
+                Button(whisperState.isRecording ? "Stop recording" : "Start recording", action: {
+                    Task {
+                        if let result = await whisperState.toggleRecord() {
+                            chatHelper.sendMessage(Message(content: result, user: DataSource.secondUser))
+                        } else {
+                            print("dfghjdsfjkgh")
+                        }
+                    }
+                })
             }.frame(minHeight: CGFloat(50)).padding()
         }
+        .onAppear {
+            Task {
+//                await whisperState.transcribeSample()
+//
+            }
+        }
+        
     }
     
     func sendMessage() {
