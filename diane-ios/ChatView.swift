@@ -11,6 +11,7 @@ struct ChatView: View {
     @State var typingMessage: String = ""
     @EnvironmentObject var chatHelper: ChatHelper
     @EnvironmentObject var whisperState: WhisperState
+    @EnvironmentObject var notesService: NotesService
     
     
     var body: some View {
@@ -22,31 +23,60 @@ struct ChatView: View {
             }.padding()
             
             HStack {
-                TextField("Message...", text: $typingMessage)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(minHeight: CGFloat(30))
-                Button(whisperState.isRecording ? "Stop recording" : "Start recording", action: {
+                Spacer()
+                
+                Button(whisperState.isRecording ? "Stop recording" : "New note", action: {
                     Task {
-                        if let result = await whisperState.toggleRecord() {
-                            chatHelper.sendMessage(Message(content: result, user: DataSource.secondUser))
-                        } else {
-                            print("Transcription failed")
+                        if let transcript = await whisperState.toggleRecord() {
+                            chatHelper.sendMessage(Message(content: transcript, user: DataSource.secondUser))
+                            let note: String = try await notesService.addNote(with: transcript)
+                            chatHelper.sendMessage(Message(content: "Noted: \(note)", user: DataSource.firstUser))
                         }
                     }
                 })
-            }.frame(minHeight: CGFloat(50)).padding()
+                .font(.title)
+                .padding(20)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                
+                Spacer()
+                
+                Button(whisperState.isRecording ? "Stop recording" : "Query notes", action: {
+                    Task {
+                        if let transcript = await whisperState.toggleRecord() {
+                            chatHelper.sendMessage(Message(content: transcript, user: DataSource.secondUser))
+                            let response: String = try await notesService.askNotes(with: transcript)
+                            chatHelper.sendMessage(Message(content: "\(response)", user: DataSource.firstUser))
+                        }
+                    }
+                })
+                .font(.title)
+                .padding(20)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                
+                Spacer()
+            }.frame(minHeight: CGFloat(50)).padding(.horizontal)
+            
+            HStack {
+                TextField("Message...", text: $typingMessage)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(minHeight: CGFloat(30))
+            }.padding()
         }
         
     }
     
     func sendMessage() {
-            chatHelper.sendMessage(Message(content: typingMessage, user: DataSource.secondUser))
-            typingMessage = ""
-        }
+        chatHelper.sendMessage(Message(content: typingMessage, user: DataSource.secondUser))
+        typingMessage = ""
+    }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView().environmentObject(ChatHelper())
+        ChatView().environmentObject(ChatHelper()).environmentObject(WhisperState())
     }
 }
