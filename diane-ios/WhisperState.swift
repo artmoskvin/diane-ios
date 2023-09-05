@@ -15,7 +15,7 @@ class WhisperState: NSObject, ObservableObject, AVAudioRecorderDelegate {
     private var audioPlayer: AVAudioPlayer?
     
     private var modelUrl: URL? {
-        Bundle.main.url(forResource: "ggml-small.en", withExtension: "bin")
+        Bundle.main.url(forResource: "ggml-base.en", withExtension: "bin")
     }
     
     private var sampleUrl: URL? {

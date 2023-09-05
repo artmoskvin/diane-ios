@@ -11,7 +11,8 @@ import SwiftUI
 struct diane_iosApp: App {
     @StateObject private var notesData = NotesData()
     @StateObject private var chatHelper = ChatHelper()
-    @StateObject var whisperState = WhisperState()
+    @StateObject private var whisperState = WhisperState()
+    @StateObject private var notesService = NotesService()
     
     var body: some Scene {
             WindowGroup {
@@ -19,6 +20,7 @@ struct diane_iosApp: App {
                     .environmentObject(notesData)
                     .environmentObject(chatHelper)
                     .environmentObject(whisperState)
+                    .environmentObject(notesService)
             }
         }
 }
